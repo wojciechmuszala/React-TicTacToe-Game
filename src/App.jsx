@@ -45,8 +45,6 @@ function App() {
     const thirdSquareSymbol =
       gameBoard[combination[2].row][combination[2].column];
 
-    // console.log(firstSquareSymbol, secondSquareSymbol, thirdSquareSymbol);
-
     if (
       firstSquareSymbol &&
       firstSquareSymbol === secondSquareSymbol &&
@@ -64,8 +62,6 @@ function App() {
         { square: { row: rowIndex, col: colIndex }, player: currentPlayer },
         ...prevTurns,
       ];
-
-      console.log(currentPlayer)
 
       return updatedTurns;
     });

@@ -11,9 +11,9 @@ export default function Player({
 
   const handleEditClick = () => {
     setIsEditing((editing) => !editing);
-    
+
     if (isEditing) {
-      onChangeName(symbol, platyerName);
+      onChangeName(symbol, playerName);
     }
   };
 
